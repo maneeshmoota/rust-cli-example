@@ -5,10 +5,10 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-  workflow_dispatch: 
+  workflow_dispatch: # Add the workflow_dispatch event
     inputs:
-      manual_trigger:
-        description: 'manula trigger'
+      manual_trigger: # Define an input parameter
+        description: 'Manually trigger the workflow'
         required: false
         default: 'true'
 
