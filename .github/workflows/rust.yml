@@ -13,9 +13,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    runs:
-      using: 'node20'
+    
     steps:    
+    - uses: node20
     - uses: actions/checkout@v3
     - name: Build
       run: cargo build --verbose
